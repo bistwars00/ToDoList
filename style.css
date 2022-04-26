@@ -1,0 +1,54 @@
+body{
+    margin:0; /* body의 기본 마진값을 없애줌 */
+    background-image:url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+.todo{
+    color:rgb(199, 187, 204);
+}
+
+.container{
+    background-color: rgb(137, 173, 221);
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.task-area{
+    border: 1px solid lightgrey;
+    margin-top: 2em;
+}
+
+.task-tabs{
+    display: flex;
+    border-bottom: 1px solid lightgrey;
+    position:relative;
+}
+
+.task-tabs div{
+    padding: 1em;
+    cursor:pointer; /* 손가락 모양 */
+}
+
+#under-line{
+    height: 4px;
+    background-color: rgb(229, 203, 145);
+    position: absolute; /* 부모구간인 task-tabs를 기준으로 위치 선정하기 때문에, 부모에 position:relative 줘야됨 */
+    width: 86px;
+    left: 0px;
+    top: 76px;
+    padding: 0px; /* div태그의 기본 패딩값을 없애줌 */
+}
+
+.task{
+    display: flex;
+    justify-content: space-between; /* 사이 공간주기 */
+    padding: 1em;
+}
+
+.task-done {
+    text-decoration: line-through;
+    background-color: rgb(231, 168, 194);
+    transition: 0.5s;
+  }
