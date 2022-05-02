@@ -1,5 +1,5 @@
 body{
-    margin:0; /* body의 기본 마진값을 없애줌 */
+    margin:0; 
     background-image:url("images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,22 +28,22 @@ body{
 
 .task-tabs div{
     padding: 1em;
-    cursor:pointer; /* 손가락 모양 */
+    cursor:pointer; 
 }
 
 #under-line{
     height: 4px;
     background-color: rgb(229, 203, 145);
-    position: absolute; /* 부모구간인 task-tabs를 기준으로 위치 선정하기 때문에, 부모에 position:relative 줘야됨 */
+    position: absolute; 
     width: 86px;
     left: 0px;
     top: 76px;
-    padding: 0px; /* div태그의 기본 패딩값을 없애줌 */
+    padding: 0px; 
 }
 
 .task{
     display: flex;
-    justify-content: space-between; /* 사이 공간주기 */
+    justify-content: space-between; 
     padding: 1em;
 }
 
